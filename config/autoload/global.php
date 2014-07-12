@@ -12,5 +12,14 @@
  */
 
 return [
-    // ...
+    'asset_manager' => [
+        'caching' => [
+            'default' => [
+                'cache'     => 'AssetManager\\Cache\\FilePathCache',
+                'options' => array(
+                    'dir' => 'public',
+                ),
+            ],
+        ],
+    ],
 ];

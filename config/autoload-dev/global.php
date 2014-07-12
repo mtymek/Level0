@@ -16,4 +16,11 @@ return [
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
     ],
+    'asset_manager' => [
+        'caching' => [
+            'default' => [
+                'cache' => null,
+            ],
+        ],
+    ],
 ];
