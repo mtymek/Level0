@@ -1,0 +1,20 @@
+{
+    "name": "mtymek/level0",
+    "description": "Better Skeleton Application for ZF2",
+    "license": "BSD-2-Clause",
+    "keywords": [
+        "framework",
+        "zf2",
+        "skeleton"
+    ],
+    "homepage": "http://mateusztymek.pl/",
+    "require": {
+        "php": ">=5.4",
+        "zendframework/zendframework": "2.3.*"
+    },
+    "require-dev": {
+        "zendframework/zend-developer-tools": "dev-master",
+        "ghislainf/zf2-whoops": "dev-master",
+        "zendframework/zftool": "dev-master"
+    }
+}
