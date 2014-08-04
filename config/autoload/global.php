@@ -22,4 +22,24 @@ return [
             ],
         ],
     ],
+    'ocra_cached_view_resolver' => [
+        // configuration to be passed to `Zend\Cache\StorageFactory#factory()`
+        'cache' => [
+            'adapter' => [
+                'name'    => 'filesystem',
+                'options' => [
+                    'ttl' => 84600,
+                    'namespace' => 'app_view_resolver_' . sha1(realpath(__FILE__)),
+                    'cache_dir' => 'data/cache',
+                    'dir_level' => 0,
+                ],
+            ],
+            'plugins' => [
+                'Serializer'
+            ]
+        ],
+
+        // following is the key used to store the template map in the cache adapter
+        'cached_template_map_key' => 'cached_template_map',
+    ],
 ];

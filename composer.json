@@ -11,11 +11,17 @@
     "require": {
         "php": ">=5.4",
         "zendframework/zendframework": "2.3.*",
-        "rwoverdijk/assetmanager": "1.4.*"
+        "rwoverdijk/assetmanager": "1.4.*",
+        "ocramius/ocra-cached-view-resolver": "1.*"
     },
     "require-dev": {
         "zendframework/zend-developer-tools": "dev-master",
         "ghislainf/zf2-whoops": "dev-master",
         "zendframework/zftool": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "MtCache\\": "module/MtCache/src"
+        }
     }
 }

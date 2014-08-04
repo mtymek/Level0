@@ -23,4 +23,14 @@ return [
             ],
         ],
     ],
+    'ocra_cached_view_resolver' => [
+        // disable cached view resolver by setting TTL to 1s
+        'cache' => [
+            'adapter' => [
+                'options' => [
+                    'ttl' => 1,
+                ],
+            ],
+        ],
+    ],
 ];
